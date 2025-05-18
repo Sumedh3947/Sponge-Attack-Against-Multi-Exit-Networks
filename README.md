@@ -23,3 +23,10 @@ A lightweight pipeline to detect and defend against high-frequency (“sponge”
 1. Install dependencies:
    ```bash
    pip install torch torchvision numpy scipy pillow tqdm
+After Installing the dependencies run the files in the below order:
+1)train_clean.py  which trains a clean model and saves it.
+2)poison_data.py  which poisoned the cifar 10 dataset.
+3)train_poisoned.py which trains a new model on the poisoned dataset.
+4)repair_dataset.py which repairs the poisoned dataset and trains a new model on it.
+
+There you go you have all the three models now clean, poisoned and repaired!!
